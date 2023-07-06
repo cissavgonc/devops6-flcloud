@@ -1,0 +1,21 @@
+$TTL    604800
+@       IN      SOA     ns1.lfcloud.sol.app.br. admin.lfcloud.sol.app.br. (
+                       20230705 ; Serial
+                       28800      ; Refresh
+                       14400      ; Retry
+                       604800     ; Expire
+                       604800 )   ; Negative Cache TTL
+
+@       IN      NS      ns1.lfcloud.sol.app.br.
+@       IN      NS      ns2.lfcloud.sol.app.br.
+@       IN      NS      ns3.lfcloud.sol.app.br.
+@       IN      NS      ns4.lfcloud.sol.app.br.
+ns1     IN      A       54.227.220.162
+ns2     IN      A       3.91.215.132
+ns3     IN      A       54.91.214.100
+ns4     IN      A       54.242.176.174
+www     IN      CNAME   ns1
+lucasbaumann IN CNAME   ns1
+francisco IN CNAME      ns2
+cecilia IN CNAME        ns3
+lucas IN CNAME          ns4
